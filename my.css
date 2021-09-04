@@ -3,7 +3,23 @@
     width: 100vw;
     flex-grow: 1;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 50px; 
+}
+
+.products {
+    float: left;
+    color: white;
+    left: 100;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-color: white;
+    align-content: center;
+    filter: invert(1);
 }
 
 .aboutUs {
@@ -15,31 +31,3 @@
     align-items: center;
 }
 
-.aboutUs :focus {
-    outline: none;
-}
-
-.logo {
-    background-color: white;
-    align-content: center;
-    filter: invert(1);
-}
-
-.logo :focus {
-    outline: none;
-}
-
-
-.products {
-    float: left;
-    color: white;
-    left: 100; 
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.products :focus {
-    outline: none;
-}
