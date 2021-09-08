@@ -4,7 +4,6 @@ body{
 
 .container{
     width: 250px;
-    height: 300px;
     margin: 80px auto;
     border-radius: 10px;
     background: black;
@@ -27,3 +26,14 @@ body{
     margin: 30px 0 20px 0;
     box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px -10px #FFFFFF;
 } 
+
+.row {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+}
