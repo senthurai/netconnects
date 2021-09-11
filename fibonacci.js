@@ -4,7 +4,7 @@ b = 1;
 result = b;
 
 for(i= 1; i < 100; i++) {
-    document.write(result + "br/>")
+    console.log(result)
     result = a + b
     a = b 
     b = result
