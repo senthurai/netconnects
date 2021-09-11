@@ -8,17 +8,16 @@
     <div>
       <form name="form1" class="cal" action="calculator.html" method="POST">
          <input type="text" name="output" id="display">
-      <div class="row">
-         <input type="button" class="buttonDesign" value="C" onclick="clearUpdate('',form1.output)">
-         <input type="button" class="buttonDesign" value="<" onclick="form1.output.value.substring(0,form1.output.value.lenght*1)">
+      <div id="row1" >
+         <input type="button" class="buttonDesign" id="c" value="C" onclick="clearUpdate('',form1.output)">
          <input type="button" class="buttonDesign" value="00" onclick="form1.output.value+='00'">
-         <input type="button" class="operatorDesign" value="/" onclick="form1.output.value+='/'">
+         <input type="button" class="operatorDesign" value="÷" onclick="form1.output.value+='÷'">
       </div>
            <div class="row">
             <input type="button" class="buttonDesign" value="7" onclick="form1.output.value+='7'">
             <input type="button" class="buttonDesign" value="8" onclick="form1.output.value+='8'">
             <input type="button" class="buttonDesign" value="9" onclick="form1.output.value+='9'">
-            <input type="button" class="operatorDesign" value="*" onclick="form1.output.value+='*'">   
+            <input type="button" class="operatorDesign" value="X" onclick="form1.output.value+='X'">   
       </div>
       <div class="row">
          <input type="button" class="buttonDesign" value="4" onclick="form1.output.value+='4'">
@@ -36,7 +35,7 @@
          <input type="button" id="zero" value="0" onclick="form1.output.value+='0'">
          <input type="button" class="buttonDesign" value="." onclick="form1.output.value+='.'">
          <input type="button" class="operatorDesign" value="%"onclick="form1.output.value+='%'">
-         <input type="button" class="operatorDesign" value="=" onclick="form1.output.value=eval(form1.output.value)"> 
+         <input type="button" class="operatorDesign" value="=" onclick="form1.output.value=eval(replace(form1.output.value))"> 
 
       </div>
    </form>
