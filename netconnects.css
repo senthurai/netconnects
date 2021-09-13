@@ -106,3 +106,12 @@ ul li a:hover{
 .srch:focus{
     outline:none;
 }
+
+#product {
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom {
+    color: white;
+}
